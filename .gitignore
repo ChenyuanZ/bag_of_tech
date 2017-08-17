@@ -1,0 +1,6 @@
+.idea
+todo.md
+.eggs
+application.conf
+*.egg-info/
+__pycache__/
