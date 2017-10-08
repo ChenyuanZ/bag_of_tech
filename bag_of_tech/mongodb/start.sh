@@ -1,0 +1,1 @@
+mongod --config /Users/chenyuan/tools/mongodb/mongod.conf
