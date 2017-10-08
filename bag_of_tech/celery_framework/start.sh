@@ -1,11 +1,10 @@
+source activate env_bot
+
 # start rabbitmq
 rabbitmq-server -detached
 
-# start redis
-redis-server /Users/chenyuan/tools/redis-4.0.1/redis.conf
-
 # start celery
-celery -A celery_app worker --loglevel=INFO & > worker.log
+celery -A celery_app worker --loglevel=INFO > worker.log 2>&1 &
 
 # start flower
-flower -A celery_app --conf=flowerconfig.py & > flower.log
+flower -A celery_app --conf=flowerconfig.py > flower.log 2>&1 &
