@@ -12,4 +12,4 @@ Bag_of_tech analyzes technology trending from StackExchange API.
 * Used MongoDB to store metadata, question and answer content.
 
 ### Data Analysis
-* To be added...
+* Question tag word cloud.
