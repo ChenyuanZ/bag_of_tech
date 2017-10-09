@@ -12,4 +12,5 @@ accept_content = ['json']
 timezone = 'America/New_York'
 enable_utc = True
 
-imports = ["bag_of_tech.celery_framework.tasks"]
+imports = ["bag_of_tech.celery_framework.stackoverflow",
+           "bag_of_tech.celery_framework.word_cloud"]
